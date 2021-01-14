@@ -10,6 +10,8 @@
 DiGraph class represents a directed weighted graph, represented by a dictionary.
 The reason we chose to represent the graph in a dictionary is because it allows easy access to each node in the graph, therefor questions like whether two nodes are connected and how many edges are in the graph can be answered in O(1). Adding a new node to the graph, or connecting two nodes in the graph with an edge, can also be done easily in O(1). Connecting simply requires adding each of the nodes to the other node's neighbors list with the wanted weight, and removing an edge requires removing each of the nodes from the other node's neighbors list.
 
+![image](https://siddarthareddy.weebly.com/uploads/2/8/7/9/28799429/4999443.png?468)
+
 ### the basic functions in graph :
 * __add node__ - add a new node to the graph
 * __add_edge__ - add a new edge to the graph between two vertices
