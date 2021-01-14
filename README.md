@@ -78,4 +78,4 @@ __GraphAlgo__ class represents the regular Graph Theory algorithms including:
 
 ### The Dijkstra algorithm
 
-
+![image](https://upload.wikimedia.org/wikipedia/commons/e/e4/DijkstraDemo.gif)
