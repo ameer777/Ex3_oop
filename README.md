@@ -10,7 +10,19 @@
 DiGraph class represents a directed weighted graph, represented by a dictionary.
 The reason we chose to represent the graph in a dictionary is because it allows easy access to each node in the graph, therefor questions like whether two nodes are connected and how many edges are in the graph can be answered in O(1). Adding a new node to the graph, or connecting two nodes in the graph with an edge, can also be done easily in O(1). Connecting simply requires adding each of the nodes to the other node's neighbors list with the wanted weight, and removing an edge requires removing each of the nodes from the other node's neighbors list.
 
-the graph class includes functions such as:
+### the basic functions in graph :
+* __add node__ - add a new node to the graph
+* __add_edge__ - add a new edge to the graph between two vertices
+* __get_all_ v__ - return a dictionary contains all the graph vertices
+* __remove node__ - remove a vertex from the graph
+* __remove edge__ - remove an edge between two vertices
+* __all_in_edges_of_node__ - returns a dictionary of all nodes connected to the given node.
+* __all_out_edeges_of_node__ - returns a dictionary of all nodes connected from the given node.
+* __e_size__ - return the number of edges in the graph
+* __v_size__ - returns the number of vertices in the graph
+* __get_mc__ - return the number of changes computed on the graph
+
+__the graph class includes functions such as:__
 
 __def __init __(self):__
 this method initilizes a new directed weighted graph.
@@ -52,5 +64,18 @@ if there is no such edge, or one of the nodes does not exist, the method returns
 delede from the dictionery of the inner edges the src node,and delede from the dictionery of the out edges the dest node,
 returns true.
 
+
+## Algorithms
+
+__GraphAlgo__ class represents the regular Graph Theory algorithms including:
+
+* __load_from_json(file)
+* __save_to_json(file)
+* __shortestPath(int src, int dest) -> (float, list)
+* __connected_component(node_id) -> list
+* __connected_components() -> List[list]
+* __plot_graph()
+
+### The Dijkstra algorithm
 
 
